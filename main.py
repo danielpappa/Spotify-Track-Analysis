@@ -74,12 +74,12 @@ def get_track_features(token, track_id):
     return json_result
 
 token = get_token()
-result = search_for_artist(token, "Michael Jackson")
-artist_id = result["id"]
-SAMPLE_SONG_ID = "5rb9QrpfcKFHM1EUbSIurX"
-songs = get_songs_by_artist(token, artist_id)
-song_ids = np.repeat(SAMPLE_SONG_ID, len(songs))
-print(songs)
+# result = search_for_artist(token, "Michael Jackson")
+# artist_id = result["id"]
+# SAMPLE_SONG_ID = "5rb9QrpfcKFHM1EUbSIurX"
+# songs = get_songs_by_artist(token, artist_id)
+# song_ids = np.repeat(SAMPLE_SONG_ID, len(songs))
+# print(songs)
 
 
 # for index, song in enumerate(songs):
@@ -89,7 +89,7 @@ print(songs)
 # for id in song_ids[:2]:
 #     print(get_track_features(token, id))
 
-print(get_track_features(token, "63y6xWR4gXz7bnUGOk8iI6"))
+# print(get_track_features(token, "63y6xWR4gXz7bnUGOk8iI6"))
 
 
 
